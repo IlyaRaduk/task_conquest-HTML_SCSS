@@ -406,9 +406,11 @@ li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .models__item {
@@ -695,5 +697,191 @@ li a {
   font-weight: 400;
   font-size: 12px;
   color: #D0D0CF;
+}
+
+@media (max-width: 900px) {
+  .main {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: auto;
+  }
+  .main__img img {
+    width: 100%;
+  }
+  .main__item {
+    margin-left: 20px;
+  }
+  .main__price {
+    display: none;
+  }
+  .main__size {
+    display: none;
+  }
+  .main__item::before {
+    display: none;
+  }
+  .banner__line {
+    padding: 52px 5px 21px 5px;
+  }
+  .banner__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .banner__img {
+    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+  }
+  .banner__img img {
+    width: 100%;
+  }
+  .banner__description {
+    margin-left: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0;
+            flex: 1 0;
+  }
+  .news__col2-img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__line {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__nav {
+    display: none;
+  }
+  .main {
+    background-position: 50% -8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__img img {
+    display: none;
+  }
+  .main__item {
+    text-align: center;
+  }
+  .main__btn {
+    margin: 0 auto;
+  }
+  .models__all {
+    right: 0;
+  }
+  .banner__line {
+    padding: 52px 5px 21px 5px;
+  }
+  .banner__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .banner__img {
+    width: 70%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    margin-bottom: 20px;
+  }
+  .banner__img img {
+    width: 100%;
+  }
+  .banner__description {
+    text-align: center;
+    margin-left: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0;
+            flex: 1 0;
+  }
+  .banner__btn {
+    margin: 0 auto;
+  }
+  .banner__pagination {
+    right: 0px;
+  }
+  .news__col1-img {
+    display: none;
+  }
+  .news {
+    padding: 60px 0px 60px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news__description {
+    margin-bottom: 50px;
+  }
+  .news__col1-img {
+    display: none;
+  }
+  .footer__line {
+    padding: 30px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__col {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 385px) {
+  .models__all {
+    top: 160px;
+  }
+  .models__item {
+    padding: 28px;
+  }
+  .models__img {
+    width: 100%;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 0px 1px 1px rgba(230, 214, 203, 0.8);
+            box-shadow: 1px 0px 1px 1px rgba(230, 214, 203, 0.8);
+    margin-bottom: 20px;
+  }
+  .models__img img {
+    width: 100%;
+  }
+  .models__more {
+    cursor: pointer;
+    font-size: 16px;
+    color: #1B1A17;
+    margin-left: 48px;
+  }
+  .models__more::before {
+    content: '';
+    position: relative;
+    top: 10px;
+    left: -48px;
+    display: block;
+    width: 30px;
+    border-bottom: 1px solid #8B8371;
+  }
 }
 /*# sourceMappingURL=style.css.map */
